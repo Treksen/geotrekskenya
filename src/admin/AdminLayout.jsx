@@ -57,7 +57,7 @@ export default function AdminLayout() {
 
           <div style={{ background: '#fff', borderRadius: 20, padding: 32, boxShadow: 'var(--sh-md)', border: '1px solid var(--gray-200)' }}>
             <h2 style={{ marginBottom: 8, fontSize: '1.3rem' }}>Admin access</h2>
-            <p style={{ color: 'var(--gray-500)', fontSize: 14, marginBottom: 24 }}>Enter your admin PIN to continue. Default PIN is <strong>1234</strong>.</p>
+            <p style={{ color: 'var(--gray-500)', fontSize: 14, marginBottom: 24 }}>Enter your admin PIN to continue.</p>
 
             {error && <div style={{ background: '#fef2f2', border: '1px solid #fecaca', color: '#dc2626', padding: '10px 14px', borderRadius: 8, fontSize: 13, marginBottom: 16 }}>{error}</div>}
 
