@@ -177,7 +177,7 @@ export default function HomePage() {
             position: "absolute",
             inset: 0,
             backgroundImage: `
-      url('/src/images/hero2.jpg'), 
+      url('/images/hero2.jpg'), 
       url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cpath d='M80 0 L0 0 0 80' fill='none' stroke='rgba(255,255,255,0.2)' stroke-width='1'/%3E%3C/svg%3E")
     `,
             backgroundSize: "cover, 80px 80px",
