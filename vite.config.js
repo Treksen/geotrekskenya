@@ -7,24 +7,40 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'icons/*.png', 'images/*.jpg'],
-      manifest: {
-        name: 'GeoTreks Kenya',
-        short_name: 'GeoTreks',
-        description: 'Geospatial, Survey & Remote Sensing Company in Kenya',
-        theme_color: '#0a5c47',
-        background_color: '#ffffff',
-        display: 'standalone',
-        orientation: 'any',
-        scope: '/',
-        start_url: '/',
-        icons: [
-          { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
-          { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any maskable' }
-        ],
-        categories: ['business', 'productivity'],
-        screenshots: []
-      },
+includeAssets: ['favicon.svg', 'icons/*.png', 'images/*.jpg', 'images/logo.png'],
+manifest: {
+  name: 'GeoTreks Kenya',
+  short_name: 'GeoTreks',
+  description: 'Geospatial, Survey & Remote Sensing Company in Kenya',
+  theme_color: '#0a5c47',
+  background_color: '#ffffff',
+  display: 'standalone',
+  orientation: 'any',
+  scope: '/',
+  start_url: '/',
+  icons: [
+    {
+      src: 'icons/icon-192.png',
+      sizes: '192x192',
+      type: 'image/png',
+      purpose: 'any'
+    },
+    {
+      src: 'icons/icon-512.png',
+      sizes: '512x512',
+      type: 'image/png',
+      purpose: 'any'
+    },
+    {
+      src: 'icons/icon-512.png',  // maskable uses same file
+      sizes: '512x512',
+      type: 'image/png',
+      purpose: 'maskable'        // ← split from 'any maskable' — that combo is deprecated
+    }
+  ],
+  categories: ['business', 'productivity'],
+  screenshots: []
+},
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,webp}'],
         runtimeCaching: [
