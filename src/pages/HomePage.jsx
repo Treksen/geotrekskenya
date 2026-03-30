@@ -240,7 +240,7 @@ export default function HomePage() {
                 animationDelay: "0.1s",
               }}
             >
-              Precision Mapping.
+              Precision Mapping,
               <br />
               <span style={{ color: "var(--green-400)" }}>Trusted</span>{" "}
               Intelligence.
@@ -279,7 +279,7 @@ export default function HomePage() {
 
             {/* Quick stats strip */}
             <div
-              className="fade-in"
+              className="hero-stats"
               style={{
                 display: "flex",
                 gap: 40,
@@ -456,7 +456,7 @@ export default function HomePage() {
                 <div
                   key={proj.id}
                   ref={ref}
-                  className="reveal card"
+                  className="reveal card project-card"
                   style={{
                     display: "grid",
                     gridTemplateColumns: i % 2 === 0 ? "2fr 3fr" : "3fr 2fr",

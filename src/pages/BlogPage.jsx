@@ -11,41 +11,162 @@ function PostCard({ post, featured }) {
   const ref = useScrollReveal()
   if (featured) {
     return (
-      <Link to={`/blog/${post.slug}`} ref={ref} className="reveal card"
-        style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', textDecoration: 'none', overflow: 'hidden' }}>
-        <div style={{ background: `linear-gradient(135deg, ${post.authorColor}dd, ${post.authorColor}88)`, padding: '48px 40px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: 320, position: 'relative', overflow: 'hidden' }}>
-          <div style={{ position: 'absolute', bottom: -40, right: -40, width: 200, height: 200, borderRadius: '50%', background: 'rgba(255,255,255,0.06)' }} />
+      <Link
+        to={`/blog/${post.slug}`}
+        ref={ref}
+        className="reveal featured-post-card card"
+        style={{
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr",
+          textDecoration: "none",
+          overflow: "hidden",
+        }}
+      >
+        <div
+          style={{
+            background: `linear-gradient(135deg, ${post.authorColor}dd, ${post.authorColor}88)`,
+            padding: "48px 40px",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            minHeight: 320,
+            position: "relative",
+            overflow: "hidden",
+          }}
+        >
+          <div
+            style={{
+              position: "absolute",
+              bottom: -40,
+              right: -40,
+              width: 200,
+              height: 200,
+              borderRadius: "50%",
+              background: "rgba(255,255,255,0.06)",
+            }}
+          />
           <div>
-            <span style={{ fontSize: 11, background: 'rgba(255,255,255,0.2)', color: '#fff', padding: '3px 10px', borderRadius: 99, fontWeight: 600, fontFamily: 'var(--font-display)' }}>{post.category}</span>
+            <span
+              style={{
+                fontSize: 11,
+                background: "rgba(255,255,255,0.2)",
+                color: "#fff",
+                padding: "3px 10px",
+                borderRadius: 99,
+                fontWeight: 600,
+                fontFamily: "var(--font-display)",
+              }}
+            >
+              {post.category}
+            </span>
           </div>
           <div>
-            <div style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.8rem', color: '#fff', opacity: 0.15, lineHeight: 1, marginBottom: 16 }}>Featured</div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-              <div className="avatar" style={{ width: 36, height: 36, fontSize: 12, background: 'rgba(255,255,255,0.2)', color: '#fff' }}>{post.initials}</div>
+            <div
+              style={{
+                fontFamily: "var(--font-display)",
+                fontWeight: 800,
+                fontSize: "1.8rem",
+                color: "#fff",
+                opacity: 0.15,
+                lineHeight: 1,
+                marginBottom: 16,
+              }}
+            >
+              Featured
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <div
+                className="avatar"
+                style={{
+                  width: 36,
+                  height: 36,
+                  fontSize: 12,
+                  background: "rgba(255,255,255,0.2)",
+                  color: "#fff",
+                }}
+              >
+                {post.initials}
+              </div>
               <div>
-                <div style={{ fontSize: 13, color: '#fff', fontWeight: 600 }}>{post.author}</div>
-                <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.65)' }}>{post.authorRole}</div>
+                <div style={{ fontSize: 13, color: "#fff", fontWeight: 600 }}>
+                  {post.author}
+                </div>
+                <div style={{ fontSize: 11, color: "rgba(255,255,255,0.65)" }}>
+                  {post.authorRole}
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div style={{ padding: '40px 36px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-          <div style={{ display: 'flex', gap: 12, marginBottom: 16, fontSize: 12, color: 'var(--gray-400)', alignItems: 'center' }}>
-            <span>{format(new Date(post.date), 'dd MMM yyyy')}</span>
+        <div
+          style={{
+            padding: "40px 36px",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              gap: 12,
+              marginBottom: 16,
+              fontSize: 12,
+              color: "var(--gray-400)",
+              alignItems: "center",
+            }}
+          >
+            <span>{format(new Date(post.date), "dd MMM yyyy")}</span>
             <span>·</span>
-            <span style={{ display: 'flex', alignItems: 'center', gap: 4 }}><Clock size={12} /> {post.readTime} min read</span>
+            <span style={{ display: "flex", alignItems: "center", gap: 4 }}>
+              <Clock size={12} /> {post.readTime} min read
+            </span>
           </div>
-          <h3 style={{ fontSize: '1.25rem', marginBottom: 14, lineHeight: 1.35 }}>{post.title}</h3>
-          <p style={{ fontSize: 14, color: 'var(--gray-600)', lineHeight: 1.75, marginBottom: 20 }}>{post.excerpt}</p>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5, marginBottom: 20 }}>
-            {post.tags.slice(0, 3).map(t => <span key={t} className="tag tag-green" style={{ fontSize: 11 }}>{t}</span>)}
+          <h3
+            style={{ fontSize: "1.25rem", marginBottom: 14, lineHeight: 1.35 }}
+          >
+            {post.title}
+          </h3>
+          <p
+            style={{
+              fontSize: 14,
+              color: "var(--gray-600)",
+              lineHeight: 1.75,
+              marginBottom: 20,
+            }}
+          >
+            {post.excerpt}
+          </p>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: 5,
+              marginBottom: 20,
+            }}
+          >
+            {post.tags.slice(0, 3).map((t) => (
+              <span key={t} className="tag tag-green" style={{ fontSize: 11 }}>
+                {t}
+              </span>
+            ))}
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 6, color: 'var(--green-600)', fontWeight: 600, fontSize: 14, fontFamily: 'var(--font-display)' }}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 6,
+              color: "var(--green-600)",
+              fontWeight: 600,
+              fontSize: 14,
+              fontFamily: "var(--font-display)",
+            }}
+          >
             Read article <ArrowRight size={14} />
           </div>
         </div>
       </Link>
-    )
+    );
   }
 
   return (

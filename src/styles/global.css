@@ -56,6 +56,56 @@
   --nav-h: 72px;
   --max-w: 1200px;
 }
+/* ── Responsive grid helpers ── */
+@media (max-width: 768px) {
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Story section & service sections */
+  .responsive-2col {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  /* Featured blog post card */
+  .featured-post-card {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Project cards */
+  .project-card {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Hero stats strip */
+  .hero-stats {
+    gap: 20px !important;
+  }
+
+  /* Services CTA row */
+  .services-cta-row {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+
+  /* Contact form grid */
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Blog post article sidebar */
+  .article-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .article-sidebar {
+    display: none !important;
+  }
+}
 
 html { scroll-behavior: smooth; }
 html, body, #root { height: 100%; }
