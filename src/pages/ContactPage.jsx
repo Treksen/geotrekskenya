@@ -63,7 +63,7 @@ export default function ContactPage() {
 
   const CONTACT_INFO = [
     { icon: Phone, label: 'Phone', value: COMPANY.phone, href: `tel:${COMPANY.phone.replace(/\s/g,'')}` },
-    // { icon: Mail,  label: 'General enquiries', value: COMPANY.email, href: `mailto:${COMPANY.email}` },
+    { icon: Mail,  label: 'General enquiries', value: COMPANY.email, href: `mailto:${COMPANY.email}` },
     // { icon: Mail,  label: 'Project proposals', value: COMPANY.salesEmail, href: `mailto:${COMPANY.salesEmail}` },
     // { icon: MapPin,label: 'Office', value: COMPANY.address, href: `https://maps.google.com/?q=${COMPANY.lat},${COMPANY.lng}` },
     { icon: Clock, label: 'Office hours', value: 'Mon–Fri, 08:00–17:00 EAT', href: null },

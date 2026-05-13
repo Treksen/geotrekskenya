@@ -76,7 +76,7 @@ export default function AboutPage() {
                 actually worked.
               </p>
               <p style={{ color: "var(--gray-600)", marginBottom: 18 }}>
-                From our first boundary survey in Kiambu County in 2024, we've
+                From our first boundary survey in in 2024, we've
                 grown to a team of {COMPANY.employees} specialists covering land
                 surveying, GIS development, remote sensing, and drone
                 operations. We've delivered {COMPANY.projects} projects across{" "}
@@ -88,7 +88,7 @@ export default function AboutPage() {
                 referrals. That number tells us more than any award.
               </p>
               <Link to="/contact" className="btn btn-primary">
-                Start a conversation <ArrowRight size={16} />
+                Contact us <ArrowRight size={16} />
               </Link>
             </div>
 
@@ -330,10 +330,10 @@ export default function AboutPage() {
             }}
           >
             We're always looking for talented surveyors, GIS professionals, and
-            remote sensing specialists. Send your CV to careers@geotreks.co.ke
+            remote sensing specialists. Send your CV to info@geotreks.co.ke
           </p>
           <a
-            href="mailto:careers@geotreks.co.ke"
+            href="mailto:info@geotreks.co.ke"
             className="btn btn-white btn-lg"
           >
             Apply <ArrowRight size={18} />

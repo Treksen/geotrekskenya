@@ -634,7 +634,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ── */}
+      {/* ── TESTIMONIALS ── 
       <section className="section" style={{ background: "var(--gray-50)" }}>
         <div className="container">
           <div className="section-header">
@@ -647,7 +647,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section>*/}
 
       {/* ── CTA ── */}
       <section
