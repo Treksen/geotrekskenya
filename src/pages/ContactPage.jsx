@@ -115,7 +115,7 @@ export default function ContactPage() {
             }}
           >
             {/* Form */}
-            <div>
+            {/* <div>
               {sent ? (
                 <div
                   style={{
@@ -277,7 +277,7 @@ export default function ContactPage() {
                   </p>
                 </form>
               )}
-            </div>
+            </div> */}
 
             {/* Contact info sidebar */}
             <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>

@@ -84,7 +84,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Case study highlight */}
-      <section className="section-sm" style={{ background: 'var(--gray-50)' }}>
+      {/* <section className="section-sm" style={{ background: 'var(--gray-50)' }}>
         <div className="container">
           <div className="section-header">
             <span className="label">Sectors we serve</span>
@@ -107,7 +107,7 @@ export default function ProjectsPage() {
             })}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <section style={{ background: 'var(--green-700)', padding: '72px 0' }}>

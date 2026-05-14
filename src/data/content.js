@@ -139,24 +139,24 @@ export const TEAM = [
 
 /// ─── PROJECTS / PORTFOLIO ─────────────────────────────────
 export const PROJECTS = [
-  {
-    id: 'proj1',
-    title: 'Mapping and Socioeconomic Survey of Slums and Informal Settlements',
-    category: 'GIS Solutions',
-    client: 'Multi-County Initiative',
-    year: '2024',
-    duration: '2 Years',
-    description: 'Comprehensive mapping and socioeconomic survey of slums and informal settlements across 13 counties in the Eastern, Coastal, Central, and North Eastern regions of Kenya. Combined field data collection, GIS mapping, and spatial analysis to support planning and policy development.',
-    outcomes: [
-      'Mapped informal settlements across 13 counties',
-      'Collected socioeconomic data from thousands of households',
-      'Identified key service delivery gaps',
-      'Delivered geospatial database and analytical reports'
-    ],
-    tags: ['GIS', 'Survey', 'Socioeconomic', 'Data Collection'],
-    featured: true,
-    color: '#0a5c47',
-  },
+  // {
+  //   id: 'proj1',
+  //   title: 'Mapping and Socioeconomic Survey of Slums and Informal Settlements',
+  //   category: 'GIS Solutions',
+  //   client: 'Multi-County Initiative',
+  //   year: '2024',
+  //   duration: '2 Years',
+  //   description: 'Comprehensive mapping and socioeconomic survey of slums and informal settlements across 13 counties in the Eastern, Coastal, Central, and North Eastern regions of Kenya. Combined field data collection, GIS mapping, and spatial analysis to support planning and policy development.',
+  //   outcomes: [
+  //     'Mapped informal settlements across 13 counties',
+  //     'Collected socioeconomic data from thousands of households',
+  //     'Identified key service delivery gaps',
+  //     'Delivered geospatial database and analytical reports'
+  //   ],
+  //   tags: ['GIS', 'Survey', 'Socioeconomic', 'Data Collection'],
+  //   featured: true,
+  //   color: '#0a5c47',
+  // },
   {
     id: 'proj2',
     title: 'GT Mapper – Field officer GPS tracking Data Collection App',

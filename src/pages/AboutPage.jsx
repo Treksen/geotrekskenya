@@ -50,7 +50,7 @@ export default function AboutPage() {
       </section>
 
       {/* Story */}
-      <section className="section">
+      {/* <section className="section">
         <div className="container">
           <div
             className="responsive-2col"
@@ -92,7 +92,7 @@ export default function AboutPage() {
               </Link>
             </div>
 
-            {/* Stats panel */}
+            
             <div
               className="fade-in-right"
               style={{
@@ -126,7 +126,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Mission & Vision */}
       <section className="section-sm" style={{ background: "var(--gray-50)" }}>
@@ -242,7 +242,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="section" style={{ background: "var(--gray-50)" }}>
+      {/* <section className="section" style={{ background: "var(--gray-50)" }}>
         <div className="container">
           <div className="section-header">
             <span className="label">The people</span>
@@ -308,14 +308,13 @@ export default function AboutPage() {
                     {member.bio}
                   </p>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                    {/* {member.expertise.map(e => <span key={e} className="tag">{e}</span>)} */}
                   </div>
                 </div>
               );
             })}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <section style={{ background: "var(--green-700)", padding: "72px 0" }}>

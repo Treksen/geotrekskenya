@@ -3,55 +3,55 @@
 
   <!-- Home Page -->
   <url>
-    <loc>https://geotrekskenya.vercel.app/</loc>
+    <loc>https://geotreks.co.ke/</loc>
     <priority>1.0</priority>
   </url>
 
   <!-- About Page -->
   <url>
-    <loc>https://geotrekskenya.vercel.app/about</loc>
+    <loc>https://geotreks.co.ke/about</loc>
     <priority>0.8</priority>
   </url>
 
   <!-- Services Page -->
   <url>
-    <loc>https://geotrekskenya.vercel.app/services</loc>
+    <loc>https://geotreks.co.ke/services</loc>
     <priority>0.8</priority>
   </url>
 
   <!-- Projects Page -->
   <url>
-    <loc>https://geotrekskenya.vercel.app/projects</loc>
+    <loc>https://geotreks.co.ke/projects</loc>
     <priority>0.8</priority>
   </url>
 
   <!-- Blog Main Page -->
   <url>
-    <loc>https://geotrekskenya.vercel.app/blog</loc>
+    <loc>https://geotreks.co.ke/blog</loc>
     <priority>0.7</priority>
   </url>
 
   <!-- Individual Blog Posts -->
   <url>
-    <loc>https://geotrekskenya.vercel.app/blog/drone-surveys-infrastructure-kenya</loc>
+    <loc>https://geotreks.co.ke/blog/drone-surveys-infrastructure-kenya</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://geotrekskenya.vercel.app/blog/google-earth-engine-beginners-guide-africa</loc>
+    <loc>https://geotreks.co.ke/blog/google-earth-engine-beginners-guide-africa</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://geotrekskenya.vercel.app/blog/land-registration-kenya-gis-revolution</loc>
+    <loc>https://geotreks.co.ke/blog/land-registration-kenya-gis-revolution</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://geotrekskenya.vercel.app/blog/qgis-vs-arcgis-pro-africa-comparison</loc>
+    <loc>https://geotreks.co.ke/blog/qgis-vs-arcgis-pro-africa-comparison</loc>
     <priority>0.6</priority>
   </url>
 
   <!-- Contact Page -->
   <url>
-    <loc>https://geotrekskenya.vercel.app/contact</loc>
+    <loc>https://geotreks.co.ke/contact</loc>
     <priority>0.7</priority>
   </url>
 
